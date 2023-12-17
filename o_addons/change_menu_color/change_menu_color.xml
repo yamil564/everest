@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<openerp>
+    <data>
+        <template id="change_menu_color_css_replace" name="change_menu_color assets" inherit_id="web.assets_common">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/change_menu_color/static/src/css/menu.css"/>
+            </xpath>
+        </template>
+        <template id="change_menu_color_css_replace_text" name="change_menu_color assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/change_menu_color/static/src/css/menu_text.css"/>
+            </xpath>
+        </template>
+        <template id="assets_frontend" name="My Module CSS Assets" inherit_id="web.assets_frontend"><!--assets_backend-->
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/change_menu_color/static/src/css/website.assets_backend.css"/>
+            </xpath>
+        </template>
+        <template id="menu_nav" name="My Module CSS Assets menu" inherit_id="web.webclient_bootstrap">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/change_menu_color/static/src/css/my_menu_nav.css"/>
+            </xpath>
+        </template>
+    </data>
+</openerp>

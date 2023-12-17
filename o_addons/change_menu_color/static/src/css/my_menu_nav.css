@@ -1,0 +1,151 @@
+/*color de todo el sistema  */
+.navbar.navbar-default.main-nav {
+	background-color: #008aff !important;
+} /*deb51e   468027*/
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #a34e60;
+}
+.btn.btn-primary.btn-sm.o_list_button_add{
+    background-color: #008aff !important;
+}
+header > .main-nav > .container-fluid > .navbar-header > .drawer-toggle, header > .main-nav > .container-fluid > .navbar-header .navbar-toggle {
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    border-radius: 0px;
+    background-color: #008aff;
+}
+.btn-primary {
+    color: #ffffff;
+    background-color: #008aff;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: #a34e60;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: #008aff;
+}
+body a {
+    color: #a34e60;
+}
+.btn-default {
+    color: #008aff;
+    background-color: transparent;
+}
+.btn-default {
+    color: #008aff;
+    background-color: #e6dede;
+}
+.o_required_modifier.o_input, .o_required_modifier .o_input {
+    background-color: #a34e60!important;
+}
+.o_view_manager_content > div > .table-responsive > .o_list_view tfoot tr:nth-child(1) td {
+    background-color: #a34e60;
+}
+.o_web_client input:focus, .o_web_client textarea:focus, .o_web_client select:focus{
+    border-bottom: 2px solid #008aff;
+}
+.o_web_client input:focus, .o_web_client textarea:focus, .o_web_client select:focus {
+    outline: none;
+    border-bottom: 2px solid #008aff;
+}
+body {
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #4c4c4c;
+    background-color: #ffffff;
+}
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    text-decoration: none;
+    outline: 0;
+    background-color: #008aff;
+}
+.o_list_view tfoot {
+    background-color: #008aff;
+    color: #ffffff;
+    cursor: default;
+    font-weight: normal;
+}
+/*color del head de las tablas */
+.table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > td {
+    border-top: 0;
+    background-color: #934757;
+    color: #ffffff;
+    font-weight: 550;
+}
+.o_list_view.table thead > tr > th.o_column_sortable:hover {
+    background-color: #285f8f;
+}
+/* modulo debates */
+.o_mail_chat .o_mail_chat_sidebar {
+    background-color: #543d3dc4;
+    color: #e5e5e5;
+}
+/*calendariooo de asistencia*/
+.o_calendar_container .o_underline_color_11 {
+    border-bottom: 4px solid #b0e276;
+}
+.o_calendar_container .o_calendar_color_11 {
+    color: #0D0D0D;
+    background-color: #b0e276;
+    border-color: #b0e276;
+    opacity: 0.7;
+}
+.o_calendar_container .o_underline_color_6 {
+    border-bottom: 4px solid #468027;
+}
+.o_calendar_container .o_calendar_color_6 {
+    color: #0D0D0D;
+    background-color: #468027;
+    border-color: #468027;
+    opacity: 0.7;
+}
+.o_calendar_container .o_underline_color_16 {
+    border-bottom: 4px solid #3eefbe;
+}
+.o_calendar_container .o_calendar_color_16 {
+    color: #0D0D0D;
+    background-color: #3eefbe;
+    border-color: #3eefbe;
+    opacity: 0.7;
+}
+.o_input {
+    border: 1px solid #ccc;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #080808;
+}/* #ffffff*/
+.oe_highlight {
+    color: #ffffff !important;
+    background-color: #008aff !important;
+}
+.o_form_view .o_horizontal_separator {
+    color: #666;
+    font-weight: bold;
+}
+.o_field_invalid.o_input, .o_field_invalid .o_input, .o_field_invalid.o_form_label {
+    color: #080808 !important;
+}
+.o_input::placeholder{
+    color: #000000;}
+.o_form_view .o_field_widget .o_list_view > tfoot > tr > td {
+        padding: 3px;
+        color: #ffffff;
+    }
+.modal-title {
+        margin: 0;
+        line-height: 1.42857143;
+        content: "everest"!important;
+        visibility: hidden;
+    }
+.modal-title:before {
+        margin: 0;
+        line-height: 1.42857143;
+        content: "everest"!important;
+        visibility: visible;
+    }
+

@@ -1,0 +1,45 @@
+version: "2"
+services:
+  db:
+    # image: postgres:9.5
+    image: postgres:9.4
+    environment:
+      - POSTGRES_PASSWORD=odoo
+      - POSTGRES_USER=odoo
+    ports:
+      - "11002:5432"
+
+  odoo10:
+    # image: odoo:11.0
+    #build: ./
+    image: victoralin10/odoo10:latest
+    depends_on:
+      - db
+    ports:
+      - "11000:8069" #localhost:11000
+    tty: true
+    command: -- --dev=reload
+    #    command: odoo scaffold /mnt/extra-addons/test_module
+    volumes:
+      - ./o_addons:/mnt/extra-addons
+      - ./o_etc:/etc/odoo
+volumes:
+  db:
+  odoo10:
+  
+#docker exec -it --user root "id del contenedor" /bin/bash
+
+#apt-get clean apt-get update
+#apt-get install build-essential libssl-dev libffi-dev python3-dev
+#pip3 install --upgrade pip
+#pip install pysftp ,bs4, cryptography,
+#            "ipaddress",#instalado
+#            "signxml",# instalado
+#            "cffi",
+#            "pyzk"
+#            "pytesseract",#instalado 
+#            "suds-jurko",#suds-jurko, paramiko,tesseract
+#para la edicion masiva instalar openupgradelib,pip install odoo10-addon-mass-editing
+#para conectarse al dispositivo biometrico 
+#apt-get update
+#apt-get install -y iputils-ping 
