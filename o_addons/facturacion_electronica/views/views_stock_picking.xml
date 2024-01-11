@@ -133,5 +133,25 @@
                 </xpath>
             </field>
         </record>
+	<record id="view_invoice_form_inherit" model="ir.ui.view">
+            <field name="name">custom.invoice.form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='discount']" position="attributes">
+                    <attribute name="string">Detraccion</attribute>
+                </xpath>
+            </field>
+        </record>
+	<record id="view_invoice_form_inherited" model="ir.ui.view">
+            <field name="name">account.invoice.form.inherit</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='date_invoice']" position="after">
+                    <field name="observacion"/>
+                </xpath>
+            </field>
+        </record>
     </data>
 </odoo>

@@ -34,13 +34,13 @@ def get_data_doc_number(tipo_doc, numero_doc, format='json'):
         #response = requests.get(url, auth=(user, password))
         if tipo_doc=='ruc':
             data2 = {'ruc':str(numero_doc), 'token': "VWD2BW3gHUO5PXFTLL4mdW6aGBeuSAH6nRHKA9dqt6ebrdreWejOlNdf1CWL"}
-            response = requests.post('https://api.migo.pe/api/v1/ruc',json=data2,headers={'content-type': 'application/json'},verify= False)#no era data era json
+            response = requests.post('https://api.migo/api/v1/ruc',json=data2,headers={'content-type': 'application/json'},verify= False)#no era data era json
         elif tipo_doc=='dni':
             data2 = {'dni':str(numero_doc), 'token': "VWD2BW3gHUO5PXFTLL4mdW6aGBeuSAH6nRHKA9dqt6ebrdreWejOlNdf1CWL"}
-            response = requests.post('https://api.migo.pe/api/v1/dni',json=data2,headers={'content-type': 'application/json'},verify= False)#no era data era json
+            response = requests.post('https://api.migo/api/v1/dni',json=data2,headers={'content-type': 'application/json'},verify= False)#no era data era json
         else:
             data2 = {'dni':str(numero_doc), 'token': "VWD2BW3gHUO5PXFTLL4mdW6aGBeuSAH6nRHKA9dqt6ebrdreWejOlNdf1CWL"}
-            response = requests.post('https://api.migo.pe/api/v1/dni',json=data2,headers={'content-type': 'application/json'},verify= False)#no era data era json
+            response = requests.post('https://api.migo/api/v1/dni',json=data2,headers={'content-type': 'application/json'},verify= False)#no era data era json
         
     except requests.exceptions.ConnectionError, e:
         res['message'] = 'Error en la conexion'

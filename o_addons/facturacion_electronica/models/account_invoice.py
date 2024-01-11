@@ -99,6 +99,8 @@ class ActivosFijos(models.Model):
 class accountInvoice(models.Model):
     _inherit = "account.invoice"
 
+    observacion = fields.Text(string='Observación')
+
     pruebautils = fields.Text("utils", copy=False)
     documentoXML = fields.Text("Documento XML", default=" ", copy=False)
     documentoXMLcliente = fields.Binary("XML cliente", copy=False)
